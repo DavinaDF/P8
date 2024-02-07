@@ -1,0 +1,9 @@
+.header {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__menu {
+        display: flex;
+    }
+}

@@ -1,0 +1,8 @@
+.header {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+}/*# sourceMappingURL=header.css.map */

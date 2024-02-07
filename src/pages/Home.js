@@ -1,11 +1,10 @@
-import React from "react";
-// import Header from "../components/Header";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
     <div>
-      {/* <Header /> */}
-      <h2>On est bien sur la page d'accueil</h2>
+      <Header />
+      <h2>Nous sommes bien sur la page d'accueil</h2>
     </div>
   );
 };

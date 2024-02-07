@@ -1,17 +1,18 @@
-import React from "react";
 import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
     <div className="header">
-      <img className="logo" src={logo} alt="Logo Kasa" />
-      <ul className="menu"></ul>
-      <li>Accueil</li>
-      <li>A propos</li>
+      <div className="header__logo">
+        <img src={logo} alt="Logo Kasa" />
+      </div>
+      <div className="header__menu">
+        <ul>
+          <li>Accueil</li>
+          <li>A propos</li>
+        </ul>
+      </div>
     </div>
-    // <div>
-    //   <h1>Kasa</h1>
-    // </div>
   );
 };
 
