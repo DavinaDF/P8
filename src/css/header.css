@@ -1,9 +1,14 @@
 .header {
+  margin: 45px 0;
   width: auto;
   display: flex;
   justify-content: space-between;
 }
+.header img {
+  width: 200px;
+}
 .header ul {
+  list-style-type: none;
   width: 300px;
   display: flex;
   justify-content: space-around;

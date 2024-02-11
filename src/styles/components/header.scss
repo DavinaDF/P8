@@ -1,15 +1,26 @@
 .header {
+    margin: 45px 0;
     width: auto;
     display: flex;
     justify-content: space-between;
 
+    img {
+        width: 200px;
+    }
+
     ul {
+        list-style-type: none;
         width: 300px;
         display: flex;
         justify-content: space-around;
         
         a {
             text-decoration: none;
+            color: $color-text;
+            font-size: 24px;
+        }
+        .nav-active {
+            text-decoration-line: underline;
         }
     }
 }

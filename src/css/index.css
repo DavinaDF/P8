@@ -1,17 +1,129 @@
 @font-face {
-  font-family: montserrat;
-  src: url(../assets/fonts/Montserrat-Regular.ttf);
+  font-family: "font-kasa";
+  src: url(../../assets/fonts/Montserrat-Regular.ttf);
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 100px;
+  height: 100%;
+  font-family: "font-kasa";
+}
+
+#root {
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header {
+  margin: 45px 0;
   width: auto;
   display: flex;
   justify-content: space-between;
 }
+.header img {
+  width: 200px;
+}
 .header ul {
+  list-style-type: none;
   width: 300px;
   display: flex;
   justify-content: space-around;
 }
 .header ul a {
   text-decoration: none;
+  color: #000;
+  font-size: 24px;
+}
+.header ul .nav-active {
+  text-decoration-line: underline;
+}
+
+.footer {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer img {
+  width: 120px;
+  height: 40px;
+}
+.footer p {
+  color: #fff;
+}
+
+.home {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  height: 223px;
+  margin: auto;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+.banner img {
+  border-radius: 25px;
+  position: absolute;
+  width: 100%;
+}
+.banner .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  border-radius: 25px;
+}
+.banner h1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+}
+.gallery__element {
+  width: 340px;
+  height: 340px;
+  background-color: #FF6060;
+  position: relative;
+}
+.gallery__element h2 {
+  position: absolute;
+  color: #fff;
+  left: 10px;
+  bottom: 10px;
 }/*# sourceMappingURL=index.css.map */

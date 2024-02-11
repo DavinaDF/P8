@@ -1,10 +1,11 @@
 import BannerHome from "../components/BannerHome";
+import Gallery from "../components/Gallery";
 
 const Home = () => {
   return (
-    <div>
-      <h2>Nous sommes bien sur la page d'accueil</h2>
+    <div className="home">
       <BannerHome />
+      <Gallery />
     </div>
   );
 };

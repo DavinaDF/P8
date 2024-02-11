@@ -1,4 +1,27 @@
 @font-face {
-  font-family: montserrat;
-  src: url(../assets/fonts/Montserrat-Regular.ttf);
+  font-family: "font-kasa";
+  src: url(../../assets/fonts/Montserrat-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 100px;
+  height: 100%;
+  font-family: "font-kasa";
+}
+
+#root {
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=settings.css.map */
