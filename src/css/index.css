@@ -75,6 +75,21 @@ a {
   margin: 0 auto;
 }
 
+.page404 h2 {
+  font-size: 300px;
+  font-weight: bold;
+  color: #FF6060;
+}
+.page404 p {
+  font-size: 36px;
+  font-weight: medium;
+  color: #FF6060;
+}
+.page404 .backHome {
+  color: #000;
+  text-decoration-line: underline;
+}
+
 .banner {
   position: relative;
   width: 100%;
@@ -111,19 +126,27 @@ a {
 }
 
 .gallery {
+  width: 100%;
+  margin: 30px 0;
   padding: 20px;
   border-radius: 25px;
   background-color: #F6F6F6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 .gallery__element {
   width: 340px;
   height: 340px;
   background-color: #FF6060;
+  border-radius: 10px;
   position: relative;
 }
 .gallery__element h2 {
   position: absolute;
   color: #fff;
-  left: 10px;
-  bottom: 10px;
+  left: 20px;
+  bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
 }/*# sourceMappingURL=index.css.map */

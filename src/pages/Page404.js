@@ -1,11 +1,7 @@
-import React from "react";
+import Error from "../components/Error";
 
 const Page404 = () => {
-  return (
-    <div className="page404">
-      <h2>Sorry, voici la fameuse page 404</h2>
-    </div>
-  );
+  return <Error />;
 };
 
 export default Page404;
