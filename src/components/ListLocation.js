@@ -1,11 +1,13 @@
-const loc = ["appartement London", "app Paris", "loft SF", "What u want"];
+import { loclist } from "../data/locations";
 
 const ListLocation = () => {
   return (
     <div className="list-Location">
       <ul>
-        {loc.map((location, index) => (
-          <li key={`${location}-${index}`}>{location}</li>
+        {loclist.map((location) => (
+          <div className="gallery__element" key={location.id}>
+            <h2>{location.title}</h2>
+          </div>
         ))}
       </ul>
     </div>
