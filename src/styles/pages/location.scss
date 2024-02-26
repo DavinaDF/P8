@@ -1,3 +1,57 @@
+.informations {
+
+    display: flex;
+    justify-content: space-between;
+
+    .infoLocation {
+
+        h2 {
+            font-weight: 500;
+            color: $color-main;
+            size: 36px;
+        }
+        h3 {
+            size: 18px;
+            font-weight: 500;
+        }
+    
+        .tagContainer {
+            display: flex;
+            gap: 10px;
+        
+            .tag {
+                background-color: $color-main;
+                color: $color-on-main;
+                border-radius: 10px;
+                padding: 5px 20px;
+                size: 14px;
+                font-weight: 800;
+            }
+        }
+    }
+    
+    .profil {
+        
+        h3 {
+            color : $color-main;
+            size: 18px;
+        }
+        img {
+            width: 64px;
+            border-radius: 50%;
+        }
+        .review {
+            width: 200px;
+            height: 40px;
+    
+            .star {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}
+
 .locationDescription {
     display: flex;
     gap : 20px
