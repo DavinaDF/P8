@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Tag from "../components/Tag";
 import Review from "../components/Review";
-import Accordion from "../components/Accordion";
+import Collapse from "../components/Collapse";
 import locations from "../data/location.json";
 import { useParams } from "react-router-dom";
 
@@ -26,8 +26,11 @@ const Location = () => {
           </div>
         </div>
         <div className="profil">
-          <h3>{location.host.name}</h3>
-          <img src={location.host.picture} alt={location.host.name} />
+          <div className="host">
+            <h3>{location.host.name}</h3>
+            <img src={location.host.picture} alt={location.host.name} />
+          </div>
+
           <div className="review">
             <Review />
           </div>
@@ -35,12 +38,16 @@ const Location = () => {
       </div>
 
       <div className="locationDescription">
-        <Accordion title="Description">
+        <Collapse title="Description">
           <p>{location.description}</p>
-        </Accordion>
-        <Accordion title="Equipements">
-          <p>{location.equipments}</p>
-        </Accordion>
+        </Collapse>
+        <Collapse title="Equipements">
+          <ul>
+            {location.equipments.map((listing, index) => (
+              <li key={index}>{listing}</li>
+            ))}
+          </ul>
+        </Collapse>
       </div>
     </div>
   );

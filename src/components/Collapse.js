@@ -1,7 +1,7 @@
 import { useState } from "react";
 import svgFleche from "../assets/images/arrow.svg";
 
-const Accordion = (props) => {
+const Collapse = (props) => {
   const [isVisible, setIsVisible] = useState(false);
   const handleToggle = () => {
     setIsVisible(!isVisible);
@@ -24,4 +24,4 @@ const Accordion = (props) => {
   );
 };
 
-export default Accordion;
+export default Collapse;

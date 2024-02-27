@@ -1,4 +1,4 @@
-import Accordion from "../components/Accordion";
+import Collapse from "../components/Collapse";
 import BannerAbout from "../components/BannerAbout";
 import { aboutDescription } from "../data/kasaAbout";
 
@@ -8,9 +8,9 @@ const About = () => {
       <BannerAbout />
       <div className="about_section">
         {aboutDescription.map((description) => (
-          <Accordion title={description.title}>
+          <Collapse title={description.title}>
             <p>{description.text}</p>
-          </Accordion>
+          </Collapse>
         ))}
       </div>
     </div>

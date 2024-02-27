@@ -1,9 +1,7 @@
 @font-face {
-    font-family: "font-kasa";
+    font-family: "Montserrat";
     src: url(../../assets/fonts/Montserrat-Regular.ttf);
 }
-
-$font-app: "font-kasa";
 
 $color-main: #FF6060;
 $color-background: #F6F6F6;
@@ -19,7 +17,7 @@ $color-on-main: #fff;
   body {
     margin: 0 100px;
     height: 100%;
-    font-family: $font-app;
+    font-family: Montesrrat;
   }
 
   #root {

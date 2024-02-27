@@ -1,11 +1,17 @@
 .informations {
 
+    font-family: Montserrat;
     display: flex;
     justify-content: space-between;
 
     .infoLocation {
 
+        // display: flex;
+        // flex-direction: column;
+        // gap: 10px;
+
         h2 {
+            margin: 5px 0;
             font-weight: 500;
             color: $color-main;
             size: 36px;
@@ -16,6 +22,7 @@
         }
     
         .tagContainer {
+            margin: 10px 0;
             display: flex;
             gap: 10px;
         
@@ -24,7 +31,7 @@
                 color: $color-on-main;
                 border-radius: 10px;
                 padding: 5px 20px;
-                size: 14px;
+                size: 18px;
                 font-weight: 800;
             }
         }
@@ -32,14 +39,20 @@
     
     .profil {
         
-        h3 {
-            color : $color-main;
-            size: 18px;
+        .host {
+            display: flex;
+
+            h3 {
+                color : $color-main;
+                size: 18px;
+                font-weight: 500;
+            }
+            img {
+                width: 64px;
+                border-radius: 50%;
+            }
         }
-        img {
-            width: 64px;
-            border-radius: 50%;
-        }
+        
         .review {
             width: 200px;
             height: 40px;
@@ -53,6 +66,8 @@
 }
 
 .locationDescription {
+
+    margin-top: 30px;
     display: flex;
     gap : 20px
 }

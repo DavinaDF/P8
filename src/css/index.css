@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "font-kasa";
+  font-family: "Montserrat";
   src: url(../../assets/fonts/Montserrat-Regular.ttf);
 }
 * {
@@ -11,7 +11,7 @@
 body {
   margin: 0 100px;
   height: 100%;
-  font-family: "font-kasa";
+  font-family: Montesrrat;
 }
 
 #root {
@@ -81,6 +81,50 @@ a {
 }
 .about_section .accordion {
   margin: 20px 0;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+}
+.informations .infoLocation h2 {
+  margin: 5px 0;
+  font-weight: 500;
+  color: #FF6060;
+  size: 36px;
+}
+.informations .infoLocation h3 {
+  size: 18px;
+  font-weight: 500;
+}
+.informations .infoLocation .tagContainer {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+.informations .infoLocation .tagContainer .tag {
+  background-color: #FF6060;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px 20px;
+  size: 14px;
+  font-weight: 800;
+}
+.informations .profil h3 {
+  color: #FF6060;
+  size: 18px;
+}
+.informations .profil img {
+  width: 64px;
+  border-radius: 50%;
+}
+.informations .profil .review {
+  width: 200px;
+  height: 40px;
+}
+.informations .profil .review .star {
+  width: 28px;
+  height: 28px;
 }
 
 .locationDescription {
@@ -217,7 +261,7 @@ a {
   color: white;
   font-family: Montserrat;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
