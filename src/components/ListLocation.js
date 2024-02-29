@@ -6,7 +6,7 @@ const ListLocation = () => {
     <div className="list-Location">
       <ul className="gallery">
         {loclist.map((location) => (
-          <Link to={`/location/${location.id}`}>
+          <Link to={`/locations/${location.id}`} key={location.id}>
             <div className="gallery__element" key={location.id}>
               <img src={location.cover} alt={location.title} />
               <h2>{location.title}</h2>

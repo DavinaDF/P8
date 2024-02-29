@@ -1,9 +1,10 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import Tag from "../components/Tag";
 import Review from "../components/Review";
 import Collapse from "../components/Collapse";
 import locations from "../data/location.json";
 import { useParams } from "react-router-dom";
+import Carrousel from "../components/Carrousel";
 
 const findLocationID = (id) => {
   return locations.find((location) => location.id === id);
@@ -15,6 +16,7 @@ const Location = () => {
 
   return (
     <div>
+      <Carrousel pictures={location.pictures} />
       <div className="informations">
         <div className="infoLocation">
           <h2>{location.title}</h2>
@@ -53,8 +55,8 @@ const Location = () => {
   );
 };
 
-Location.propTypes = {
-  location: PropTypes.array.isRequired,
-};
+// Location.propTypes = {
+//   location: PropTypes.array.isRequired,
+// };
 
 export default Location;

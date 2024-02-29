@@ -84,6 +84,7 @@ a {
 }
 
 .informations {
+  font-family: Montserrat;
   display: flex;
   justify-content: space-between;
 }
@@ -107,14 +108,18 @@ a {
   color: #fff;
   border-radius: 10px;
   padding: 5px 20px;
-  size: 14px;
+  size: 18px;
   font-weight: 800;
 }
-.informations .profil h3 {
+.informations .profil .host {
+  display: flex;
+}
+.informations .profil .host h3 {
   color: #FF6060;
   size: 18px;
+  font-weight: 500;
 }
-.informations .profil img {
+.informations .profil .host img {
   width: 64px;
   border-radius: 50%;
 }
@@ -128,6 +133,7 @@ a {
 }
 
 .locationDescription {
+  margin-top: 30px;
   display: flex;
   gap: 20px;
 }
@@ -311,4 +317,22 @@ a {
   transform: translateY(0px);
   height: -moz-max-content;
   height: max-content;
+}
+
+.carrousel {
+  position: relative;
+  width: 100%;
+  height: 415px;
+}
+.carrousel .currentSlide {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carrousel .arrowLeft {
+  position: absolute;
+  height: 120px;
+  left: 20px;
+  top: auto;
 }/*# sourceMappingURL=index.css.map */

@@ -3,13 +3,13 @@ import svgFleche from "../assets/images/arrow.svg";
 
 const Collapse = (props) => {
   const [isVisible, setIsVisible] = useState(false);
-  const handleToggle = () => {
+  const handleShow = () => {
     setIsVisible(!isVisible);
   };
 
   return (
     <div className={`collapse ${isVisible ? "visible" : ""}`}>
-      <div className="head" onClick={handleToggle}>
+      <div className="title" onClick={handleShow}>
         <h3>{props.title}</h3>
         <img
           src={svgFleche}
