@@ -1,6 +1,7 @@
-.about_section {
-  margin-top: 30px;
+.about {
+  max-width: 1240px;
+  margin: 0 20px;
 }
-.about_section .accordion {
-  margin: 20px 0;
+.about .about_section {
+  margin-top: 30px;
 }/*# sourceMappingURL=about.css.map */

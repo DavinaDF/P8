@@ -15,7 +15,7 @@ const Location = () => {
   const location = findLocationID(id);
 
   return (
-    <div>
+    <div className="locationContainer">
       <Carrousel pictures={location.pictures} />
       <div className="informations">
         <div className="infoLocation">

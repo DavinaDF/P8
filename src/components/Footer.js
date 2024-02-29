@@ -1,4 +1,4 @@
-import logoFooter from "../assets/images/LOGO-footer.png";
+import logoFooter from "../assets/images/logoKazaFooter.svg";
 
 const Footer = () => {
   return (
