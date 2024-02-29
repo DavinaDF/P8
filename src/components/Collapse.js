@@ -8,7 +8,7 @@ const Collapse = (props) => {
   };
 
   return (
-    <div className={`collapse ${isVisible ? "visible" : ""}`}>
+    <div className="collapse">
       <div className="title" onClick={handleShow}>
         <h3>{props.title}</h3>
         <img

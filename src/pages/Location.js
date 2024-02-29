@@ -34,7 +34,7 @@ const Location = () => {
           </div>
 
           <div className="review">
-            <Review />
+            <Review rating={location.rating} />
           </div>
         </div>
       </div>
