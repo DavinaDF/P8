@@ -1,6 +1,10 @@
 .locationContainer {
     max-width: 1240px;
-    margin : 0 20px;
+    margin : auto;
+
+    @media screen and (max-width: 1240px) {
+        margin: 20px;
+      }
 }
 
 .informations {
@@ -8,6 +12,10 @@
     font-family: Montserrat;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
 
     .infoLocation {
 
@@ -43,14 +51,30 @@
     }
     
     .profil {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: flex-end;
+
+        @media screen and (max-width: 768px) {
+            flex-direction:row-reverse;
+            justify-content: space-between;
+          }
         
         .host {
             display: flex;
+            justify-content: end;
+            align-items: center;
 
             h3 {
+                width: 50%;
+                padding-right: 20px;
+                text-align: right;
                 color : $color-main;
                 size: 18px;
                 font-weight: 500;
+                line-height: 142.6%;
             }
             img {
                 width: 64px;
@@ -59,8 +83,14 @@
         }
         
         .review {
+            display: flex;
+            justify-content: end;
             width: 200px;
             height: 40px;
+
+            @media screen and (max-width: 768px) {
+                justify-content: start;
+              }
     
             .star {
                 width: 28px;
@@ -74,5 +104,17 @@
 
     margin-top: 30px;
     display: flex;
-    gap : 20px
+    gap : 20px;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+        gap:0;
+      }
+
+    .collapse {
+        @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+    }
 }

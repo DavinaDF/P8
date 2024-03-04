@@ -7,6 +7,10 @@
     margin-bottom: 30px;
     border-radius: 25px;
 
+    @media screen and (max-width: 768px) {
+        height: 255px;
+      }
+
     .currentSlide {
         width: 100%;
         height: 100%;
@@ -21,6 +25,11 @@
         left: 20px;
         top: 35%;
         cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+            top: 45%;
+            height: 24px;
+          }
     }
 
     .arrowRight {
@@ -29,6 +38,11 @@
         right: 20px;
         top: 35%;
         cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+            top: 45%;
+            height: 24px;
+          }
     }
 
 }

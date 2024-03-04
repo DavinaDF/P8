@@ -6,6 +6,11 @@
   margin-bottom: 30px;
   border-radius: 25px;
 }
+@media screen and (max-width: 768px) {
+  .carrousel {
+    height: 255px;
+  }
+}
 .carrousel .currentSlide {
   width: 100%;
   height: 100%;
@@ -22,10 +27,22 @@
   top: 35%;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .carrousel .arrowLeft {
+    top: 45%;
+    height: 24px;
+  }
+}
 .carrousel .arrowRight {
   position: absolute;
   height: 100px;
   right: 20px;
   top: 35%;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .carrousel .arrowRight {
+    top: 45%;
+    height: 24px;
+  }
 }/*# sourceMappingURL=carrousel.css.map */

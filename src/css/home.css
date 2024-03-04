@@ -1,5 +1,10 @@
 .home {
   max-width: 1240px;
   min-height: 100%;
-  margin: 0 20px;
+  margin: auto;
+}
+@media screen and (max-width: 1240px) {
+  .home {
+    margin: 20px;
+  }
 }/*# sourceMappingURL=home.css.map */
