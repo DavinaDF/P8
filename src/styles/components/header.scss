@@ -12,18 +12,34 @@
 
     img {
         width: 200px;
+        @media screen and (max-width: 768px) {
+            width: 120px;
+          }
     }
 
     ul {
         list-style-type: none;
         width: 300px;
         display: flex;
-        justify-content: space-around;
+        justify-content: end;
+        gap: 40px;
+
+        @media screen and (max-width: 768px) {
+            justify-content:space-around;
+            width: 100%;
+          }
         
         a {
             text-decoration: none;
             color: $color-text;
+            font-family: Montserrat;
             font-size: 24px;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-left: 20px;
+              }
         }
         .nav-active {
             text-decoration-line: underline;

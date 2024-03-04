@@ -9,6 +9,11 @@
   align-items: center;
   gap: 30px;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 0;
+  }
+}
 .footer img {
   width: 120px;
   height: 40px;
