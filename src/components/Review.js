@@ -2,26 +2,36 @@ import React from "react";
 import starGrey from "../assets/images/starGrey.svg";
 import starFull from "../assets/images/starFull.svg";
 
-const Review = (rating) => {
+const Review = ({ rating }) => {
   // Variables
-  const countGreyStar = 0;
-  const countFullStar = 5;
+  console.log(rating);
+  let countGreyStar = 0;
+  const countFullStar = parseInt(rating);
+  let greyStar = [];
+  let fullStar = [];
+  console.log(countFullStar);
 
   // Calculs
-  if (rating < 5) {
-    countFullStar = rating;
-    countGreyStar = 5 - rating;
+  if (countFullStar < 5) {
+    countGreyStar = 5 - countFullStar;
+    console.log(countGreyStar);
   }
 
-  console.log(countGreyStar);
+  for (let index = 0; index < countFullStar; index++) {
+    fullStar.push(
+      <img className="star" key={index} src={starFull} alt="Etoile rouge" />
+    );
+  }
+  for (let index = 0; index < countGreyStar; index++) {
+    greyStar.push(
+      <img className="star" key={index} src={starGrey} alt="Etoile vide" />
+    );
+  }
 
   return (
     <div className="review">
-      <img src={starFull} alt="etoile pleine" className="star" />
-      <img src={starFull} alt="etoile pleine" className="star" />
-      <img src={starFull} alt="etoile pleine" className="star" />
-      <img src={starGrey} alt="etoile vide" className="star" />
-      <img src={starGrey} alt="etoile vide" className="star" />
+      {fullStar}
+      {greyStar}
     </div>
   );
 };
