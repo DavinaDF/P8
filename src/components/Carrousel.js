@@ -27,25 +27,29 @@ const Carrousel = ({ pictures }) => {
   return (
     <div className="carrousel">
       <img
-        onClick={handlePreviousSlide}
-        className="arrowLeft"
-        src={arrowLeft}
-        alt="flèche photo précédente"
-      />
-      <img
-        onClick={handleNextSlide}
-        className="arrowRight"
-        src={arrowRight}
-        alt="flèche photo suivante"
-      />
-      <img
         className="currentSlide"
         src={currentSlide}
         alt={`Photo du logement n° ${currentIndex}`}
       />
-      <div className="slideNumber">{`${currentIndex + 1}/${
-        pictures.length
-      }`}</div>
+      {pictures.length > 1 && (
+        <>
+          <img
+            onClick={handlePreviousSlide}
+            className="arrowLeft"
+            src={arrowLeft}
+            alt="flèche photo précédente"
+          />
+          <img
+            onClick={handleNextSlide}
+            className="arrowRight"
+            src={arrowRight}
+            alt="flèche photo suivante"
+          />
+          <div className="slideNumber">{`${currentIndex + 1}/${
+            pictures.length
+          }`}</div>
+        </>
+      )}
     </div>
   );
 };
