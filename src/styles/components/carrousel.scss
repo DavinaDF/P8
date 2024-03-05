@@ -45,4 +45,17 @@
           }
     }
 
+    .slideNumber {
+        position: relative;
+        left: 48%;
+        bottom: 40px;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+            display: none;
+          }
+    }
+
 }

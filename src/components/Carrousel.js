@@ -3,16 +3,18 @@ import arrowRight from "../assets/images/arrowRight.svg";
 import arrowLeft from "../assets/images/arrowLeft.svg";
 
 const Carrousel = ({ pictures }) => {
-  // State du composant
+  // State du composant : l'index actuel de la slide visible
   const [currentIndex, setIndex] = useState(0);
 
-  // Comportements
+  // ---- Comportements
+  // Au clic sur la flèche de gauche, changement état index slide -1
   const handlePreviousSlide = () => {
     setIndex((previousIndex) =>
       previousIndex === 0 ? pictures.length - 1 : previousIndex - 1
     );
   };
 
+  // Au clic sur la flèche de droite, changement état index slide +1
   const handleNextSlide = () => {
     setIndex((nextIndex) =>
       nextIndex === pictures.length - 1 ? 0 : nextIndex + 1
@@ -42,6 +44,9 @@ const Carrousel = ({ pictures }) => {
         src={currentSlide}
         alt={`Photo du logement n° ${currentIndex}`}
       />
+      <div className="slideNumber">{`${currentIndex + 1}/${
+        pictures.length
+      }`}</div>
     </div>
   );
 };

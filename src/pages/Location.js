@@ -1,4 +1,3 @@
-// import PropTypes from "prop-types";
 import Tag from "../components/Tag";
 import Review from "../components/Review";
 import Collapse from "../components/Collapse";
@@ -6,10 +5,12 @@ import locations from "../data/location.json";
 import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 
+// Fonction qui renvoie les données de l'objet dont l'id est identique à l'id d'entrée
 const findLocationID = (id) => {
   return locations.find((location) => location.id === id);
 };
 
+// Fonction pour récupérer l'id du logement sélectionné et récupérer les données associées
 const Location = () => {
   const { id } = useParams();
   const location = findLocationID(id);
