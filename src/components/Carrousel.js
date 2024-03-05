@@ -21,9 +21,8 @@ const Carrousel = ({ pictures }) => {
     );
   };
 
-  // Variables
+  // Variable pour la source de la photo à afficher
   const currentSlide = pictures[currentIndex];
-  // const countSlide = pictures.length;
 
   return (
     <div className="carrousel">

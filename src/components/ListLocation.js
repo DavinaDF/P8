@@ -1,4 +1,4 @@
-import { loclist } from "../data/locations";
+import loclist from "../data/location.json";
 import { Link } from "react-router-dom";
 
 const ListLocation = () => {
