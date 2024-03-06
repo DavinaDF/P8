@@ -49,7 +49,7 @@ a {
   list-style-type: none;
   width: 300px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 40px;
 }
 @media screen and (max-width: 768px) {
@@ -177,7 +177,7 @@ a {
 }
 .informations .profil .host {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .informations .profil .host h3 {
@@ -195,7 +195,7 @@ a {
 }
 .informations .profil .review {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 5px;
   width: 200px;
   height: 40px;

@@ -60,6 +60,7 @@
             margin-top: 20px;
             flex-direction:row-reverse;
             justify-content: space-between;
+            align-items: center;
           }
         
         .host {
@@ -91,6 +92,7 @@
 
             @media screen and (max-width: 768px) {
                 justify-content: start;
+                align-items: center;
                 width: auto;
               }
     
