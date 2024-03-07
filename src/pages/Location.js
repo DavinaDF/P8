@@ -2,7 +2,8 @@ import Tag from "../components/Tag";
 import Review from "../components/Review";
 import Collapse from "../components/Collapse";
 import locations from "../data/location.json";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import Carrousel from "../components/Carrousel";
 
 // Fonction qui renvoie les données de l'objet dont l'id est identique à l'id d'entrée
@@ -14,6 +15,18 @@ const findLocationID = (id) => {
 const Location = () => {
   const { id } = useParams();
   const location = findLocationID(id);
+  const naviate = useNavigate();
+
+  useEffect(() => {
+    if (!location) {
+      naviate("/error");
+    }
+  });
+
+  // On return null pour déclencher le useEffect
+  if (!location) {
+    return null;
+  }
 
   return (
     <div className="locationContainer">
